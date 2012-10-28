@@ -1,0 +1,46 @@
+/*
+	Uploader main styles
+*/
+
+	.fle-uploader{
+		margin: 5px;
+		padding: 9px;
+		box-sizing: border-box;
+		background: #E8E8E8;
+		border: 1px solid #C7C7C7;
+		border-radius: 3px;
+	}
+	
+	
+	
+	.fle-uploader-filelist{
+		margin: 5px;
+	}
+	
+	.fle-uploader-filename{
+		margin: 4px auto;
+	}
+	
+	.fle-uploader-filelist,
+	.fle-uploader-filelist *{
+		font-size: 12px;
+		font-family: Trebuchet MS;
+	}
+	
+	.fle-uploader-progressbar{
+		height: 10px;
+		border: 1px solid #707070;
+		background: #EAECEB;
+		border-radius: 4px;
+	}
+	
+	.fle-uploader-progressbar div{
+		height: 100%;
+		width: 0%;		
+		background: #adadad; /* Old browsers */
+		background: -moz-linear-gradient(top,  #adadad 0%, #4f4f4f 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#adadad), color-stop(100%,#4f4f4f)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #adadad 0%,#4f4f4f 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #adadad 0%,#4f4f4f 100%); /* Opera 11.10+ */
+		background: linear-gradient(to bottom,  #adadad 0%,#4f4f4f 100%); /* W3C */		
+	}

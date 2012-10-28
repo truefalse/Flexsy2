@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<config>
+	<section name="base" lang="TABS_BASE">
+		<field name="Имя сайта" key="site_name" type="text" />
+		<field name="Аминистратор сайта" key="site_admin_name" type="text" />
+		<field name="E-mail" key="site_admin_email" type="text" />
+		<field name="Сайт офф-лайн" key="site_offline" type="yesno" />
+		<field name="Офф-лайн сообщение" key="site_offline_message" type="text" />
+	</section>
+	<section name="database" lang="TABS_DB">
+		<field name="Хост" key="db_host" type="text" />
+		<field name="Пользователь" key="db_username" type="text" />
+		<field name="Пароль" key="db_passwd" type="text" />		
+		<field name="Имя базы данных" key="db_name" type="text" />
+		<field name="Преффикс для табиц" key="db_prefix" type="text" />
+	</section>
+	<section name="system" lang="TABS_SYSTEM">	
+		<field name="Включить Debug" key="debug" type="yesno" />		
+		<field name="Уровень отображение ошибок PHP" key="err_reporting" type="select">
+			<option value="0">Скрыть все</option>
+			<option value="4">Только E_PARSE</option>
+			<option value="7">Максимальный</option>
+		</field>	
+		<field name="Использовать Smarty" key="useSmarty" type="yesno" />
+		<field name="Разделитель строки запроса" key="var_separator" type="text" />
+		<field name="Уникальный ключ сайта" key="salt" type="text" />
+		<field name="Включить лог" key="log_enable" type="yesno" />
+		<field name="Стандартный язык сайта" key="defaultLang" type="select">
+			<option value="en">English</option>
+			<option value="ru">Русский</option>
+			<option value="uk">Українська</option>
+		</field>
+		<field name="Добавить язык в адресс" key="addLangCodeToURL" type="yesno" />
+		<field name="Шаблон сайта" key="template" type="text" />
+		<field name="URL запроса для главной" key="home_url" type="text" />
+		<field name="Обрабатывать роуты" key="handle_route" type="yesno" />
+		
+	</section>
+	<section name="session" lang="TABS_SESSION">
+		<field name="Имя сессии" key="session_name" type="text" />
+		<field name="Пространство имен сессии" key="session_namespace" type="text" />
+		<field name="Время жизни сессии" key="session_lifetime" type="text" />
+		<field name="Время жизни cookie" key="cookie_lifetime" type="text" />
+		<field name="Домен cookie" key="cookie_domain" type="text" />
+		<field name="Путь к информации" key="cookie_path" type="text" />
+		<field name="Запоминать логин и пароль в cookie" key="remember_user" type="yesno" />
+	</section>
+	<section name="cache" lang="TABS_CACHE">
+		<field name="Кеширование" key="cache_enable" type="yesno" />
+		<field name="Время жизни кеша" key="cache_livetime" type="text" />	
+	</section>
+	<section name="more" lang="TABS_MORE">
+		<field name="Маска fCrypt символов для GET" key="fcrypt_mask_get" type="text" />
+		<field name="Маска fCrypt символов для POST" key="fcrypt_mask_post" type="text" />
+	</section>
+</config>
